@@ -1,0 +1,21 @@
+CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj: \
+ /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/sysmem.c \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/errno.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/errno.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/reent.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/newlib.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/config.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/cdefs.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_types.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_types.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/lock.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h
