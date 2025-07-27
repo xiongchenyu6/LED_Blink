@@ -28,6 +28,9 @@
 #include "usbd_cdc_if.h" // Include USB CDC interface header
 #include <string.h>      // For strlen
 #include <stdio.h>       // For sprintf
+#include "ssd1306_fonts.h"
+#include "ssd1306_fonts_vertical.h"
+#include "chinese_font_16x16.h"
 
 /* USER CODE END Includes */
 
@@ -99,93 +102,20 @@ int main(void)
   // Skip USB for now - MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   
-  // Simple LED test - 3 short blinks to show we're alive
-  for(int i = 0; i < 3; i++) {
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // LED ON
-    HAL_Delay(200);
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED OFF
-    HAL_Delay(200);
-  }
-  
-  // Wait a bit
-  HAL_Delay(1000);
-  
-  // Now scan I2C and show results via LED
-  uint8_t device_found = 0;
-  
-  // Check common OLED addresses
-  if (HAL_I2C_IsDeviceReady(&hi2c1, 0x3C << 1, 2, 100) == HAL_OK) {
-    device_found = 1;
-  } else if (HAL_I2C_IsDeviceReady(&hi2c1, 0x3D << 1, 2, 100) == HAL_OK) {
-    device_found = 1;
-  }
-  
-  // Show result with LED
-  if (device_found) {
-    // Found device - slow blink
-    for(int i = 0; i < 5; i++) {
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // LED ON
-      HAL_Delay(500);
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED OFF
-      HAL_Delay(500);
-    }
-  } else {
-    // No device found - fast blink
-    for(int i = 0; i < 10; i++) {
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // LED ON
-      HAL_Delay(100);
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED OFF
-      HAL_Delay(100);
-    }
-  }
-  
-  // Simple test - try to initialize OLED
-  if (device_found && ssd1306_Init() == 1) {
-    // First, test with a simple pattern
-    ssd1306_Fill(0);  // Clear screen completely
+  // Initialize OLED display immediately
+  if (ssd1306_Init() == 1) {
+    // Clear screen
+    ssd1306_Fill(0);
     
-    // Draw a border around the screen
-    for(int x = 0; x < 128; x++) {
-      ssd1306_DrawPixel(x, 0, 1);      // Top line
-      ssd1306_DrawPixel(x, 63, 1);     // Bottom line
-    }
-    for(int y = 0; y < 64; y++) {
-      ssd1306_DrawPixel(0, y, 1);      // Left line
-      ssd1306_DrawPixel(127, y, 1);    // Right line
-    }
-    
-    // Draw a cross in the middle
-    for(int i = 0; i < 64; i++) {
-      ssd1306_DrawPixel(32 + i, 32, 1);    // Horizontal line
-      ssd1306_DrawPixel(64, i, 1);         // Vertical line
-    }
+    // Display Chinese text "我爱郭芷慧"
+    ssd1306_SetCursor(14, 24);  // Center the text (5 chars * 18px = 90px, (128-90)/2 = 19)
+    ssd1306_WriteChineseChar(CHAR_WO, 1);   // 我
+    ssd1306_WriteChineseChar(CHAR_AI, 1);   // 爱
+    ssd1306_WriteChineseChar(CHAR_GUO, 1);  // 郭
+    ssd1306_WriteChineseChar(CHAR_ZHI, 1);  // 芷
+    ssd1306_WriteChineseChar(CHAR_HUI, 1);  // 慧
     
     ssd1306_UpdateScreen();
-    HAL_Delay(2000);  // Show pattern for 2 seconds
-    
-    // Now try text
-    ssd1306_Fill(0);  // Clear again
-    
-    // Try simple text with 5x7 font
-    ssd1306_SetCursor(10, 10);
-    ssd1306_WriteString("TEST", Font_5x7, 1);
-    
-    ssd1306_SetCursor(10, 20);
-    ssd1306_WriteString("1234", Font_5x7, 1);
-    
-    ssd1306_SetCursor(10, 30);
-    ssd1306_WriteString("HELLO", Font_5x7, 1);
-    
-    ssd1306_SetCursor(10, 40);
-    ssd1306_WriteString("WORLD", Font_5x7, 1);
-    
-    ssd1306_UpdateScreen();
-    
-    // Celebrate with a victory blink
-    HAL_Delay(1000);
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-    HAL_Delay(1000);
-    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
   }
   
   /*

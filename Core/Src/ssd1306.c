@@ -38,8 +38,8 @@ void ssd1306_WriteData(uint8_t *data, uint16_t size)
 // Initialize SSD1306
 uint8_t ssd1306_Init(void)
 {
-    // Wait for the screen to boot
-    HAL_Delay(100);
+    // Wait just a bit for the screen to boot
+    HAL_Delay(20);
 
     // Check if device is ready
     // HAL_I2C_IsDeviceReady prototype is now known via ssd1306.h -> stm32f1xx_hal.h
@@ -77,7 +77,7 @@ uint8_t ssd1306_Init(void)
     // Turn on
     ssd1306_WriteCommand(0xAF); // Display ON
     
-    HAL_Delay(100); // Wait for display to stabilize
+    HAL_Delay(10); // Wait briefly for display to stabilize
 
     // Clear screen
     ssd1306_Fill(0); // 0 for Black, 1 for White
