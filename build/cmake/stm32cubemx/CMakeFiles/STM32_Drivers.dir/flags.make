@@ -4,7 +4,7 @@
 # compile C with /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc
 C_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-C_INCLUDES = -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include
+C_INCLUDES = -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/Target -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include
 
 C_FLAGS = -mcpu=cortex-m3 -mthumb -Os -ffunction-sections -fdata-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
 

@@ -21,17 +21,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -53,17 +59,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -85,17 +97,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -117,17 +135,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -149,17 +173,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -181,17 +211,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -213,17 +249,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -245,17 +287,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -277,17 +325,137 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+
+cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+
+cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+
+cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -309,17 +477,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -341,17 +515,23 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
@@ -373,48 +553,196 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
-  /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
+cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
 
-/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
+cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+
+cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h
+
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
 
-/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c:
 
-/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
 
-/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c:
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c:
 
-/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c:
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c:
+
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h:
+
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h:
+
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h:
+
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h:
+
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
+
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_version.h:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c:
+
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
 
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h:
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_gcc.h:
 
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h:
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/cmsis_compiler.h:
 
@@ -422,19 +750,25 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/stdint.h:
-
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Include/core_cm3.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/system_stm32f1xx.c:
 
+/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h:
+
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
+
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
 
@@ -443,10 +777,6 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
-
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_intsup.h:
-
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/_stdint.h:
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
 
@@ -462,10 +792,4 @@ cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Drive
 
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
 
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/_newlib_version.h:
-
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/machine/_default_types.h:
-
-/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
-
-/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include/sys/features.h:
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:

@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake
+CMAKE_COMMAND = /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake
 
 # The command to remove a file.
-RM = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E rm -f
+RM = /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -86,10 +86,12 @@ clean: cmake/stm32cubemx/clean
 
 # Recursive "all" directory target.
 cmake/stm32cubemx/all: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
+cmake/stm32cubemx/all: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
 .PHONY : cmake/stm32cubemx/all
 
 # Recursive "codegen" directory target.
 cmake/stm32cubemx/codegen: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/codegen
+cmake/stm32cubemx/codegen: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/codegen
 .PHONY : cmake/stm32cubemx/codegen
 
 # Recursive "preinstall" directory target.
@@ -98,6 +100,7 @@ cmake/stm32cubemx/preinstall:
 
 # Recursive "clean" directory target.
 cmake/stm32cubemx/clean: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean
+cmake/stm32cubemx/clean: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean
 .PHONY : cmake/stm32cubemx/clean
 
 #=============================================================================
@@ -105,14 +108,15 @@ cmake/stm32cubemx/clean: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean
 
 # All Build rule for target.
 CMakeFiles/LED_Blink.dir/all: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
+CMakeFiles/LED_Blink.dir/all: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target LED_Blink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target LED_Blink"
 .PHONY : CMakeFiles/LED_Blink.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LED_Blink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LED_Blink.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 0
 .PHONY : CMakeFiles/LED_Blink.dir/rule
@@ -124,7 +128,7 @@ LED_Blink: CMakeFiles/LED_Blink.dir/rule
 # codegen rule for target.
 CMakeFiles/LED_Blink.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target LED_Blink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Finished codegen for target LED_Blink"
 .PHONY : CMakeFiles/LED_Blink.dir/codegen
 
 # clean rule for target.
@@ -139,12 +143,12 @@ CMakeFiles/LED_Blink.dir/clean:
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all:
 	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/depend
 	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19 "Built target STM32_Drivers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Built target STM32_Drivers"
 .PHONY : cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
 
 # Build rule for subdir invocation for target.
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 0
 .PHONY : cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/rule
@@ -156,13 +160,45 @@ STM32_Drivers: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/rule
 # codegen rule for target.
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target STM32_Drivers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Finished codegen for target STM32_Drivers"
 .PHONY : cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/codegen
 
 # clean rule for target.
 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean:
 	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean
 .PHONY : cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean
+
+#=============================================================================
+# Target rules for target cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir
+
+# All Build rule for target.
+cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all:
+	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/depend
+	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=39,40,41,42 "Built target USB_Device_Library"
+.PHONY : cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
+
+# Build rule for subdir invocation for target.
+cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles 0
+.PHONY : cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/rule
+
+# Convenience name for target.
+USB_Device_Library: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/rule
+.PHONY : USB_Device_Library
+
+# codegen rule for target.
+cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=39,40,41,42 "Finished codegen for target USB_Device_Library"
+.PHONY : cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/codegen
+
+# clean rule for target.
+cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean:
+	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean
+.PHONY : cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

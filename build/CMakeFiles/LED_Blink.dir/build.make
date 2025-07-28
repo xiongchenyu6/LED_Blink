@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake
+CMAKE_COMMAND = /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake
 
 # The command to remove a file.
-RM = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E rm -f
+RM = /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,10 +72,66 @@ include CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/codegen:
 .PHONY : CMakeFiles/LED_Blink.dir/codegen
 
+CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/Target/usbd_conf.c
+CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj.d -o CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/Target/usbd_conf.c
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/Target/usbd_conf.c > CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.i
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/Target/usbd_conf.c -o CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.s
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usb_device.c
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj.d -o CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usb_device.c
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usb_device.c > CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.i
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usb_device.c -o CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.s
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_desc.c
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj.d -o CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_desc.c
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_desc.c > CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.i
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_desc.c -o CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.s
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_cdc_if.c
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -MF CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d -o CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_cdc_if.c
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_cdc_if.c > CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.i
+
+CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/USB_DEVICE/App/usbd_cdc_if.c -o CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.s
+
 CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj: CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/main.c
 CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/main.c
 
 CMakeFiles/LED_Blink.dir/Core/Src/main.c.i: cmake_force
@@ -86,10 +142,52 @@ CMakeFiles/LED_Blink.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/main.c.s"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/main.c -o CMakeFiles/LED_Blink.dir/Core/Src/main.c.s
 
+CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/gpio.c
+CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/gpio.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/gpio.c > CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/gpio.c -o CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/i2c.c
+CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/i2c.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/i2c.c > CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/i2c.c -o CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/tim.c
+CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/tim.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/tim.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/tim.c > CMakeFiles/LED_Blink.dir/Core/Src/tim.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/tim.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/tim.c -o CMakeFiles/LED_Blink.dir/Core/Src/tim.c.s
+
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/stm32f1xx_it.c
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/stm32f1xx_it.c
 
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -103,7 +201,7 @@ CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/stm32f1xx_hal_msp.c
 
 CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -117,7 +215,7 @@ CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj: CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/sysmem.c
 CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/sysmem.c
 
 CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.i: cmake_force
@@ -131,7 +229,7 @@ CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj: CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/syscalls.c
 CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/syscalls.c
 
 CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.i: cmake_force
@@ -144,7 +242,7 @@ CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj: CMakeFiles/LED_Blink.dir/flags.make
 CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/startup_stm32f103xb.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM object CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/startup_stm32f103xb.s
 
 CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.i: cmake_force
@@ -155,19 +253,119 @@ CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.s"
 	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/startup_stm32f103xb.s -o CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.s
 
+CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/chinese_font_16x16.c
+CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/chinese_font_16x16.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/chinese_font_16x16.c > CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/chinese_font_16x16.c -o CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/rgb_breathing.c
+CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/rgb_breathing.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/rgb_breathing.c > CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/rgb_breathing.c -o CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306.c
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306.c > CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306.c -o CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts.c
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts.c > CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts.c -o CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts_vertical.c
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts_vertical.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts_vertical.c > CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/ssd1306_fonts_vertical.c -o CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.s
+
+CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj: CMakeFiles/LED_Blink.dir/flags.make
+CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj: /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/timer_control.c
+CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj: CMakeFiles/LED_Blink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj -MF CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj.d -o CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj -c /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/timer_control.c
+
+CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.i"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/timer_control.c > CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.i
+
+CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.s"
+	/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/Core/Src/timer_control.c -o CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.s
+
 # Object files for target LED_Blink
 LED_Blink_OBJECTS = \
+"CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj" \
+"CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj" \
+"CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj" \
+"CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj" \
 "CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj" \
 "CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj" \
 "CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj" \
 "CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj" \
-"CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj"
+"CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj" \
+"CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj"
 
 # External object files for target LED_Blink
 LED_Blink_EXTERNAL_OBJECTS = \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj" \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj" \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
@@ -177,16 +375,39 @@ LED_Blink_EXTERNAL_OBJECTS = \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" \
 "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" \
-"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj" \
+"/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
 
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/main.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_it.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/stm32f1xx_hal_msp.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/syscalls.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/startup_stm32f103xb.s.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj
+LED_Blink.elf: CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
@@ -197,9 +418,16 @@ LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM3
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
 LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+LED_Blink.elf: cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/build.make
 LED_Blink.elf: CMakeFiles/LED_Blink.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable LED_Blink.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable LED_Blink.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LED_Blink.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Generating LED_Blink.bin"
 	arm-none-eabi-objcopy -O binary /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/LED_Blink.elf LED_Blink.bin

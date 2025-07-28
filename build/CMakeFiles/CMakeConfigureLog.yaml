@@ -4,484 +4,17 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      The target system is: Generic -  - arm
-      The host system is: Linux - 6.14.2 - x86_64
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc 
-      Build flags: -mcpu=cortex-m3;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections
-      Id flags:  
-      
-      The output was:
-      1
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-exit.o): in function `exit':
-      exit.c:(.text.exit+0x14): undefined reference to `_exit'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-writer.o): in function `_write_r':
-      writer.c:(.text._write_r+0x14): undefined reference to `_write'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-closer.o): in function `_close_r':
-      closer.c:(.text._close_r+0xc): undefined reference to `_close'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      lseekr.c:(.text._lseek_r+0x14): undefined reference to `_lseek'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-readr.o): in function `_read_r':
-      readr.c:(.text._read_r+0x14): undefined reference to `_read'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      sbrkr.c:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
-      collect2: error: ld returned 1 exit status
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc 
-      Build flags: -mcpu=cortex-m3;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections
-      Id flags: -c 
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
-      
-      The C compiler identification is GNU, found in:
-        /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/3.31.5/CompilerIdC/CMakeCCompilerId.o
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-      Compiler: /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++ 
-      Build flags: -mcpu=cortex-m3;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
-      Id flags:  
-      
-      The output was:
-      1
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-exit.o): in function `exit':
-      exit.c:(.text.exit+0x14): undefined reference to `_exit'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-writer.o): in function `_write_r':
-      writer.c:(.text._write_r+0x14): undefined reference to `_write'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-closer.o): in function `_close_r':
-      closer.c:(.text._close_r+0xc): undefined reference to `_close'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lseekr.o): in function `_lseek_r':
-      lseekr.c:(.text._lseek_r+0x14): undefined reference to `_lseek'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-readr.o): in function `_read_r':
-      readr.c:(.text._read_r+0x14): undefined reference to `_read'
-      /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
-      sbrkr.c:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
-      collect2: error: ld returned 1 exit status
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++ 
-      Build flags: -mcpu=cortex-m3;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
-      Id flags: -c 
-      
-      The output was:
-      0
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
-      
-      The CXX compiler identification is GNU, found in:
-        /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.o
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS"
-      binary: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections"
-      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS'
-        
-        Run Build Command(s): /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_fbbee/fast
-        /etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_fbbee.dir/build.make CMakeFiles/cmTC_fbbee.dir/build
-        make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS'
-        Building C object CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj -c /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)' --with-bugurl=https://bugs.linaro.org/
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 12.3.1 20230626 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_fbbee.dir/'
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/cc1 -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fbbee.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m3 -mfloat-abi=soft -mthumb -mlibarch=armv7-m -march=armv7-m -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o /tmp/ccxvByBT.s
-        GNU C11 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) version 12.3.1 20230626 (arm-none-eabi)
-        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/include"
-        ignoring nonexistent directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/usr/local/include"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/include-fixed"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include"
-        ignoring nonexistent directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/usr/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include
-        End of search list.
-        GNU C11 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) version 12.3.1 20230626 (arm-none-eabi)
-        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 438b582e669a48ce1020c90eb318abec
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_fbbee.dir/'
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj /tmp/ccxvByBT.s
-        GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 2.40.0.20230627
-        COMPILER_PATH=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_fbbee.a
-        /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -P CMakeFiles/cmTC_fbbee.dir/cmake_clean_target.cmake
-        /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbbee.dir/link.txt --verbose=1
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_fbbee.a CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_fbbee.a
-        make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include]
-        end of search list found
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include-fixed]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include]
-        implicit include dirs: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include-fixed;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS']
-        ignore line: []
-        ignore line: [Run Build Command(s): /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_fbbee/fast]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_fbbee.dir/build.make CMakeFiles/cmTC_fbbee.dir/build]
-        ignore line: [make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS']
-        ignore line: [Building C object CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj -c /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc]
-        ignore line: [Target: arm-none-eabi]
-        ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)' --with-bugurl=https://bugs.linaro.org/]
-        ignore line: [Thread model: single]
-        ignore line: [Supported LTO compression algorithms: zlib]
-        ignore line: [gcc version 12.3.1 20230626 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_fbbee.dir/']
-        ignore line: [ /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/cc1 -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fbbee.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m3 -mfloat-abi=soft -mthumb -mlibarch=armv7-m -march=armv7-m -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o /tmp/ccxvByBT.s]
-        ignore line: [GNU C11 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) version 12.3.1 20230626 (arm-none-eabi)]
-        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/include"]
-        ignore line: [ignoring nonexistent directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/usr/local/include"]
-        ignore line: [ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/include-fixed"]
-        ignore line: [ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include"]
-        ignore line: [ignoring nonexistent directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/usr/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include]
-        ignore line: [ /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed]
-        ignore line: [ /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include]
-        ignore line: [End of search list.]
-        ignore line: [GNU C11 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) version 12.3.1 20230626 (arm-none-eabi)]
-        ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: 438b582e669a48ce1020c90eb318abec]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_fbbee.dir/']
-        ignore line: [ /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj /tmp/ccxvByBT.s]
-        ignore line: [GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 2.40.0.20230627]
-        ignore line: [COMPILER_PATH=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/]
-        ignore line: [LIBRARY_PATH=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_fbbee.a]
-        ignore line: [/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -P CMakeFiles/cmTC_fbbee.dir/cmake_clean_target.cmake]
-        ignore line: [/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbbee.dir/link.txt --verbose=1]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_fbbee.a CMakeFiles/cmTC_fbbee.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_fbbee.a]
-        ignore line: [make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-WDVExS']
-        ignore line: []
-        ignore line: []
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    checks:
-      - "Detecting CXX compiler ABI info"
-    directories:
-      source: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ"
-      binary: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics"
-      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
-      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_CXX_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ'
-        
-        Run Build Command(s): /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_8ad29/fast
-        /etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_8ad29.dir/build.make CMakeFiles/cmTC_8ad29.dir/build
-        make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ'
-        Building CXX object CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++   -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj -c /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++
-        Target: arm-none-eabi
-        Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)' --with-bugurl=https://bugs.linaro.org/
-        Thread model: single
-        Supported LTO compression algorithms: zlib
-        gcc version 12.3.1 20230626 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_8ad29.dir/'
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/cc1plus -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/ -isysroot /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8ad29.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m3 -mfloat-abi=soft -mthumb -mlibarch=armv7-m -march=armv7-m -Wall -Wextra -Wpedantic -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o /tmp/cc7vcI5q.s
-        GNU C++17 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) version 12.3.1 20230626 (arm-none-eabi)
-        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7-m/nofp"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/backward"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/include"
-        ignoring nonexistent directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/usr/local/include"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/include-fixed"
-        ignoring duplicate directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include"
-        ignoring nonexistent directory "/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/usr/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7-m/nofp
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/backward
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include
-        End of search list.
-        GNU C++17 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) version 12.3.1 20230626 (arm-none-eabi)
-        	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: f4effcca7e7be5b700cb3eb6c8c498de
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_8ad29.dir/'
-         /nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc7vcI5q.s
-        GNU assembler version 2.40.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 2.40.0.20230627
-        COMPILER_PATH=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/:/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-mthumb' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX static library libcmTC_8ad29.a
-        /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -P CMakeFiles/cmTC_8ad29.dir/cmake_clean_target.cmake
-        /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ad29.dir/link.txt --verbose=1
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_8ad29.a CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_8ad29.a
-        make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Parsed CXX implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7-m/nofp]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/backward]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed]
-          add: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include]
-        end of search list found
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/c++/12.3.1]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7-m/nofp] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7-m/nofp]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/c++/12.3.1/backward] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/c++/12.3.1/backward]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/include-fixed] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include-fixed]
-        collapse include dir [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include] ==> [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include]
-        implicit include dirs: [/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/c++/12.3.1;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7-m/nofp;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/c++/12.3.1/backward;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include-fixed;/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ']
-        ignore line: []
-        ignore line: [Run Build Command(s): /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_8ad29/fast]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_8ad29.dir/build.make CMakeFiles/cmTC_8ad29.dir/build]
-        ignore line: [make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-JaIUSQ']
-        ignore line: [Building CXX object CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj]
-        link line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++   -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj -c /nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
-          arg [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++] ==> ignore
-          arg [-mcpu=cortex-m3] ==> ignore
-          arg [-Wall] ==> ignore
-          arg [-Wextra] ==> ignore
-          arg [-Wpedantic] ==> ignore
-          arg [-fdata-sections] ==> ignore
-          arg [-ffunction-sections] ==> ignore
-          arg [-fno-rtti] ==> ignore
-          arg [-fno-exceptions] ==> ignore
-          arg [-fno-threadsafe-statics] ==> ignore
-          arg [-v] ==> ignore
-          arg [-o] ==> ignore
-          arg [CMakeFiles/cmTC_8ad29.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
-          arg [-c] ==> ignore
-          arg [/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp] ==> ignore
-        linker tool for 'CXX': /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Running the CXX compiler's linker: "/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++" "-v"
-      Using built-in specs.
-      COLLECT_GCC=/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++
-      COLLECT_LTO_WRAPPER=/nix/store/sdjbn2872dpch112zns01288ckj9jrrp-gcc-arm-embedded-12.3.rel1/bin/../libexec/gcc/arm-none-eabi/12.3.1/lto-wrapper
-      Target: arm-none-eabi
-      Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)' --with-bugurl=https://bugs.linaro.org/
-      Thread model: single
-      Supported LTO compression algorithms: zlib
-      gcc version 12.3.1 20230626 (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35))
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Running the CXX compiler's linker: "/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++" "-V"
-      arm-none-eabi-g++: error: unrecognized command-line option '-V'
-      arm-none-eabi-g++: fatal error: no input files
-      compilation terminated.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:31 (project)"
-    message: |
-      Running the CXX compiler's linker: "/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-g++" "--version"
-      arm-none-eabi-g++ (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 12.3.1 20230626
-      Copyright (C) 2022 Free Software Foundation, Inc.
-      This is free software; see the source for copying conditions.  There is NO
-      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
-      - "/nix/store/ciiwq1ymzac9m5azhf4higkynmy3f8f7-cmake-3.31.5/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:35 (enable_language)"
-    message: |
-      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      arm-none-eabi-gcc (Arm GNU Toolchain 12.3.Rel1 (Build arm-12.35)) 12.3.1 20230626
-      Copyright (C) 2022 Free Software Foundation, Inc.
-      This is free software; see the source for copying conditions.  There is NO
-      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-      
-...
-
----
-events:
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
       - "CMakeLists.txt:36 (project)"
     message: |
       The target system is: Generic -  - arm
-      The host system is: Linux - 6.14.3 - x86_64
+      The host system is: Linux - 6.15.7 - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:36 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
@@ -491,17 +24,17 @@ events:
       
       The output was:
       1
-      /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-exit.o): in function `exit':
+      /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-exit.o): in function `exit':
       exit.c:(.text.exit+0x14): undefined reference to `_exit'
-      /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-closer.o): in function `_close_r':
+      /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-closer.o): in function `_close_r':
       closer.c:(.text._close_r+0xc): undefined reference to `_close'
-      /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-lseekr.o): in function `_lseek_r':
       lseekr.c:(.text._lseek_r+0x14): undefined reference to `_lseek'
-      /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-readr.o): in function `_read_r':
+      /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-readr.o): in function `_read_r':
       readr.c:(.text._read_r+0x14): undefined reference to `_read'
-      /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-writer.o): in function `_write_r':
+      /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-writer.o): in function `_write_r':
       writer.c:(.text._write_r+0x14): undefined reference to `_write'
-      /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
       sbrkr.c:(.text._sbrk_r+0xc): undefined reference to `_sbrk'
       collect2: error: ld returned 1 exit status
       
@@ -509,9 +42,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:36 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -526,13 +59,13 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.o
+        /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/3.31.7/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
     backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:36 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
@@ -544,29 +77,29 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:36 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn"
-      binary: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn"
+      source: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q"
+      binary: "/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mcpu=cortex-m3 -mthumb -Os -ffunction-sections -fdata-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections"
       CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
-      CMAKE_EXE_LINKER_FLAGS: "-T/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/STM32F103C8Tx_FLASH.ld -Wl,--gc-sections"
+      CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn'
+        Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q'
         
-        Run Build Command(s): /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_1bd08/fast
-        /etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_1bd08.dir/build.make CMakeFiles/cmTC_1bd08.dir/build
-        make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn'
-        Building C object CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc   -mcpu=cortex-m3 -mthumb -Os -ffunction-sections -fdata-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj -c /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_a7130/fast
+        /etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_a7130.dir/build.make CMakeFiles/cmTC_a7130.dir/build
+        make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q'
+        Building C object CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj
+        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc   -mcpu=cortex-m3 -mthumb -Os -ffunction-sections -fdata-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj -c /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -574,75 +107,75 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
-        COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_1bd08.dir/'
-         /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1bd08.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mthumb -mcpu=cortex-m3 -mfloat-abi=soft -mlibarch=armv7-m -march=armv7-m -Os -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o /tmp/ccwJZSEW.s
+        COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_a7130.dir/'
+         /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a7130.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mthumb -mcpu=cortex-m3 -mfloat-abi=soft -mlibarch=armv7-m -march=armv7-m -Os -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o /tmp/cc9Szq8P.s
         GNU C11 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
         	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
-        ignoring nonexistent directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/usr/local/include"
-        ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
-        ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
-        ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/include"
+        ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
+        ignoring nonexistent directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
+        ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include
-         /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
-         /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
+         /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include
+         /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
+         /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: e89038eedc6170daa7e4ecd67cd2deb0
-        COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_1bd08.dir/'
-         /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj /tmp/ccwJZSEW.s
+        COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_a7130.dir/'
+         /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj /tmp/cc9Szq8P.s
         GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
-        COMPILER_PATH=/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
-        LIBRARY_PATH=/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_1bd08.a
-        /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -P CMakeFiles/cmTC_1bd08.dir/cmake_clean_target.cmake
-        /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bd08.dir/link.txt --verbose=1
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_1bd08.a CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj
-        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_1bd08.a
-        make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn'
+        COMPILER_PATH=/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_a7130.a
+        /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -P CMakeFiles/cmTC_a7130.dir/cmake_clean_target.cmake
+        /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7130.dir/link.txt --verbose=1
+        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_a7130.a CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj
+        /etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_a7130.a
+        make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:36 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
-          add: [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
-          add: [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
+          add: [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+          add: [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+          add: [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         end of search list found
-        collapse include dir [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include] ==> [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include]
-        collapse include dir [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed] ==> [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed]
-        collapse include dir [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include] ==> [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include]
-        implicit include dirs: [/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include;/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed;/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include]
+        collapse include dir [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include] ==> [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include]
+        collapse include dir [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed] ==> [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+        collapse include dir [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include] ==> [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include]
+        implicit include dirs: [/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include;/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed;/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/arm-none-eabi/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:36 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn']
+        ignore line: [Change Dir: '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q']
         ignore line: []
-        ignore line: [Run Build Command(s): /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_1bd08/fast]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_1bd08.dir/build.make CMakeFiles/cmTC_1bd08.dir/build]
-        ignore line: [make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn']
-        ignore line: [Building C object CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc   -mcpu=cortex-m3 -mthumb -Os -ffunction-sections -fdata-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj -c /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E env VERBOSE=1 /etc/profiles/per-user/freeman.xiong/bin/make -f Makefile cmTC_a7130/fast]
+        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/make  -f CMakeFiles/cmTC_a7130.dir/build.make CMakeFiles/cmTC_a7130.dir/build]
+        ignore line: [make[1]: Entering directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q']
+        ignore line: [Building C object CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc   -mcpu=cortex-m3 -mthumb -Os -ffunction-sections -fdata-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj -c /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -650,36 +183,36 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_1bd08.dir/']
-        ignore line: [ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1bd08.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mthumb -mcpu=cortex-m3 -mfloat-abi=soft -mlibarch=armv7-m -march=armv7-m -Os -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o /tmp/ccwJZSEW.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_a7130.dir/']
+        ignore line: [ /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v7-m/nofp -iprefix /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a7130.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mthumb -mcpu=cortex-m3 -mfloat-abi=soft -mlibarch=armv7-m -march=armv7-m -Os -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o /tmp/cc9Szq8P.s]
         ignore line: [GNU C11 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"]
-        ignore line: [ignoring nonexistent directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/usr/local/include"]
-        ignore line: [ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"]
-        ignore line: [ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"]
-        ignore line: [ignoring duplicate directory "/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
-        ignore line: [ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
-        ignore line: [ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
+        ignore line: [ /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+        ignore line: [ /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+        ignore line: [ /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e89038eedc6170daa7e4ecd67cd2deb0]
-        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_1bd08.dir/']
-        ignore line: [ /nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj /tmp/ccwJZSEW.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_a7130.dir/']
+        ignore line: [ /nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj /tmp/cc9Szq8P.s]
         ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
-        ignore line: [COMPILER_PATH=/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
-        ignore line: [LIBRARY_PATH=/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/nix/store/z4va7a3r0xc5gqx6w0ha0kx93wg233qj-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_1bd08.a]
-        ignore line: [/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -P CMakeFiles/cmTC_1bd08.dir/cmake_clean_target.cmake]
-        ignore line: [/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bd08.dir/link.txt --verbose=1]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_1bd08.a CMakeFiles/cmTC_1bd08.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_1bd08.a]
-        ignore line: [make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-ctHmMn']
+        ignore line: [COMPILER_PATH=/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../libexec/gcc/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/nix/store/lyw5x085828mzih76llii47bnn7da5f8-gcc-arm-embedded-14.2.rel1/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mthumb' '-Os' '-mcpu=cortex-m3' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-mlibarch=armv7-m' '-march=armv7-m' '-dumpdir' 'CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_a7130.a]
+        ignore line: [/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -P CMakeFiles/cmTC_a7130.dir/cmake_clean_target.cmake]
+        ignore line: [/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7130.dir/link.txt --verbose=1]
+        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ar qc libcmTC_a7130.a CMakeFiles/cmTC_a7130.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/etc/profiles/per-user/freeman.xiong/bin/arm-none-eabi-ranlib libcmTC_a7130.a]
+        ignore line: [make[1]: Leaving directory '/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/CMakeScratch/TryCompile-IX7c4q']
         ignore line: []
         ignore line: []
         implicit libs: []

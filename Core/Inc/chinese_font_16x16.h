@@ -17,5 +17,6 @@ extern FontDef Font_Chinese_16x16;
 
 // Function to draw Chinese character
 void ssd1306_WriteChineseChar(uint8_t index, uint8_t color);
+void ssd1306_WriteChineseText(uint8_t x, uint8_t y, uint8_t color);
 
 #endif /* CHINESE_FONT_16X16_H */

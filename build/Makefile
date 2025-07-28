@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake
+CMAKE_COMMAND = /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake
 
 # The command to remove a file.
-RM = /nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E rm -f
+RM = /nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/b
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/nix/store/ad4c8nx2lkjs4zq0sj9jdpn7w45v9ccs-cmake-3.31.6/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/nix/store/hvn9cprr3p61gjlahk9pq4bmp3zaxj4a-cmake-3.31.7/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -142,6 +142,91 @@ STM32_Drivers/fast:
 	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build
 .PHONY : STM32_Drivers/fast
 
+#=============================================================================
+# Target rules for targets named USB_Device_Library
+
+# Build rule for target.
+USB_Device_Library: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 USB_Device_Library
+.PHONY : USB_Device_Library
+
+# fast build rule for target.
+USB_Device_Library/fast:
+	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build
+.PHONY : USB_Device_Library/fast
+
+Core/Src/chinese_font_16x16.obj: Core/Src/chinese_font_16x16.c.obj
+.PHONY : Core/Src/chinese_font_16x16.obj
+
+# target to build an object file
+Core/Src/chinese_font_16x16.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.obj
+.PHONY : Core/Src/chinese_font_16x16.c.obj
+
+Core/Src/chinese_font_16x16.i: Core/Src/chinese_font_16x16.c.i
+.PHONY : Core/Src/chinese_font_16x16.i
+
+# target to preprocess a source file
+Core/Src/chinese_font_16x16.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.i
+.PHONY : Core/Src/chinese_font_16x16.c.i
+
+Core/Src/chinese_font_16x16.s: Core/Src/chinese_font_16x16.c.s
+.PHONY : Core/Src/chinese_font_16x16.s
+
+# target to generate assembly for a file
+Core/Src/chinese_font_16x16.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/chinese_font_16x16.c.s
+.PHONY : Core/Src/chinese_font_16x16.c.s
+
+Core/Src/gpio.obj: Core/Src/gpio.c.obj
+.PHONY : Core/Src/gpio.obj
+
+# target to build an object file
+Core/Src/gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.obj
+.PHONY : Core/Src/gpio.c.obj
+
+Core/Src/gpio.i: Core/Src/gpio.c.i
+.PHONY : Core/Src/gpio.i
+
+# target to preprocess a source file
+Core/Src/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.i
+.PHONY : Core/Src/gpio.c.i
+
+Core/Src/gpio.s: Core/Src/gpio.c.s
+.PHONY : Core/Src/gpio.s
+
+# target to generate assembly for a file
+Core/Src/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/gpio.c.s
+.PHONY : Core/Src/gpio.c.s
+
+Core/Src/i2c.obj: Core/Src/i2c.c.obj
+.PHONY : Core/Src/i2c.obj
+
+# target to build an object file
+Core/Src/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.obj
+.PHONY : Core/Src/i2c.c.obj
+
+Core/Src/i2c.i: Core/Src/i2c.c.i
+.PHONY : Core/Src/i2c.i
+
+# target to preprocess a source file
+Core/Src/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.i
+.PHONY : Core/Src/i2c.c.i
+
+Core/Src/i2c.s: Core/Src/i2c.c.s
+.PHONY : Core/Src/i2c.s
+
+# target to generate assembly for a file
+Core/Src/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/i2c.c.s
+.PHONY : Core/Src/i2c.c.s
+
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -165,6 +250,102 @@ Core/Src/main.s: Core/Src/main.c.s
 Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
+
+Core/Src/rgb_breathing.obj: Core/Src/rgb_breathing.c.obj
+.PHONY : Core/Src/rgb_breathing.obj
+
+# target to build an object file
+Core/Src/rgb_breathing.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.obj
+.PHONY : Core/Src/rgb_breathing.c.obj
+
+Core/Src/rgb_breathing.i: Core/Src/rgb_breathing.c.i
+.PHONY : Core/Src/rgb_breathing.i
+
+# target to preprocess a source file
+Core/Src/rgb_breathing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.i
+.PHONY : Core/Src/rgb_breathing.c.i
+
+Core/Src/rgb_breathing.s: Core/Src/rgb_breathing.c.s
+.PHONY : Core/Src/rgb_breathing.s
+
+# target to generate assembly for a file
+Core/Src/rgb_breathing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/rgb_breathing.c.s
+.PHONY : Core/Src/rgb_breathing.c.s
+
+Core/Src/ssd1306.obj: Core/Src/ssd1306.c.obj
+.PHONY : Core/Src/ssd1306.obj
+
+# target to build an object file
+Core/Src/ssd1306.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.obj
+.PHONY : Core/Src/ssd1306.c.obj
+
+Core/Src/ssd1306.i: Core/Src/ssd1306.c.i
+.PHONY : Core/Src/ssd1306.i
+
+# target to preprocess a source file
+Core/Src/ssd1306.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.i
+.PHONY : Core/Src/ssd1306.c.i
+
+Core/Src/ssd1306.s: Core/Src/ssd1306.c.s
+.PHONY : Core/Src/ssd1306.s
+
+# target to generate assembly for a file
+Core/Src/ssd1306.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306.c.s
+.PHONY : Core/Src/ssd1306.c.s
+
+Core/Src/ssd1306_fonts.obj: Core/Src/ssd1306_fonts.c.obj
+.PHONY : Core/Src/ssd1306_fonts.obj
+
+# target to build an object file
+Core/Src/ssd1306_fonts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.obj
+.PHONY : Core/Src/ssd1306_fonts.c.obj
+
+Core/Src/ssd1306_fonts.i: Core/Src/ssd1306_fonts.c.i
+.PHONY : Core/Src/ssd1306_fonts.i
+
+# target to preprocess a source file
+Core/Src/ssd1306_fonts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.i
+.PHONY : Core/Src/ssd1306_fonts.c.i
+
+Core/Src/ssd1306_fonts.s: Core/Src/ssd1306_fonts.c.s
+.PHONY : Core/Src/ssd1306_fonts.s
+
+# target to generate assembly for a file
+Core/Src/ssd1306_fonts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts.c.s
+.PHONY : Core/Src/ssd1306_fonts.c.s
+
+Core/Src/ssd1306_fonts_vertical.obj: Core/Src/ssd1306_fonts_vertical.c.obj
+.PHONY : Core/Src/ssd1306_fonts_vertical.obj
+
+# target to build an object file
+Core/Src/ssd1306_fonts_vertical.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.obj
+.PHONY : Core/Src/ssd1306_fonts_vertical.c.obj
+
+Core/Src/ssd1306_fonts_vertical.i: Core/Src/ssd1306_fonts_vertical.c.i
+.PHONY : Core/Src/ssd1306_fonts_vertical.i
+
+# target to preprocess a source file
+Core/Src/ssd1306_fonts_vertical.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.i
+.PHONY : Core/Src/ssd1306_fonts_vertical.c.i
+
+Core/Src/ssd1306_fonts_vertical.s: Core/Src/ssd1306_fonts_vertical.c.s
+.PHONY : Core/Src/ssd1306_fonts_vertical.s
+
+# target to generate assembly for a file
+Core/Src/ssd1306_fonts_vertical.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/ssd1306_fonts_vertical.c.s
+.PHONY : Core/Src/ssd1306_fonts_vertical.c.s
 
 Core/Src/stm32f1xx_hal_msp.obj: Core/Src/stm32f1xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f1xx_hal_msp.obj
@@ -262,6 +443,150 @@ Core/Src/sysmem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/sysmem.c.s
 .PHONY : Core/Src/sysmem.c.s
 
+Core/Src/tim.obj: Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.obj
+
+# target to build an object file
+Core/Src/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.c.obj
+
+Core/Src/tim.i: Core/Src/tim.c.i
+.PHONY : Core/Src/tim.i
+
+# target to preprocess a source file
+Core/Src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/tim.c.i
+.PHONY : Core/Src/tim.c.i
+
+Core/Src/tim.s: Core/Src/tim.c.s
+.PHONY : Core/Src/tim.s
+
+# target to generate assembly for a file
+Core/Src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/tim.c.s
+.PHONY : Core/Src/tim.c.s
+
+Core/Src/timer_control.obj: Core/Src/timer_control.c.obj
+.PHONY : Core/Src/timer_control.obj
+
+# target to build an object file
+Core/Src/timer_control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.obj
+.PHONY : Core/Src/timer_control.c.obj
+
+Core/Src/timer_control.i: Core/Src/timer_control.c.i
+.PHONY : Core/Src/timer_control.i
+
+# target to preprocess a source file
+Core/Src/timer_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.i
+.PHONY : Core/Src/timer_control.c.i
+
+Core/Src/timer_control.s: Core/Src/timer_control.c.s
+.PHONY : Core/Src/timer_control.s
+
+# target to generate assembly for a file
+Core/Src/timer_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/Core/Src/timer_control.c.s
+.PHONY : Core/Src/timer_control.c.s
+
+USB_DEVICE/App/usb_device.obj: USB_DEVICE/App/usb_device.c.obj
+.PHONY : USB_DEVICE/App/usb_device.obj
+
+# target to build an object file
+USB_DEVICE/App/usb_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.obj
+.PHONY : USB_DEVICE/App/usb_device.c.obj
+
+USB_DEVICE/App/usb_device.i: USB_DEVICE/App/usb_device.c.i
+.PHONY : USB_DEVICE/App/usb_device.i
+
+# target to preprocess a source file
+USB_DEVICE/App/usb_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.i
+.PHONY : USB_DEVICE/App/usb_device.c.i
+
+USB_DEVICE/App/usb_device.s: USB_DEVICE/App/usb_device.c.s
+.PHONY : USB_DEVICE/App/usb_device.s
+
+# target to generate assembly for a file
+USB_DEVICE/App/usb_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usb_device.c.s
+.PHONY : USB_DEVICE/App/usb_device.c.s
+
+USB_DEVICE/App/usbd_cdc_if.obj: USB_DEVICE/App/usbd_cdc_if.c.obj
+.PHONY : USB_DEVICE/App/usbd_cdc_if.obj
+
+# target to build an object file
+USB_DEVICE/App/usbd_cdc_if.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+.PHONY : USB_DEVICE/App/usbd_cdc_if.c.obj
+
+USB_DEVICE/App/usbd_cdc_if.i: USB_DEVICE/App/usbd_cdc_if.c.i
+.PHONY : USB_DEVICE/App/usbd_cdc_if.i
+
+# target to preprocess a source file
+USB_DEVICE/App/usbd_cdc_if.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.i
+.PHONY : USB_DEVICE/App/usbd_cdc_if.c.i
+
+USB_DEVICE/App/usbd_cdc_if.s: USB_DEVICE/App/usbd_cdc_if.c.s
+.PHONY : USB_DEVICE/App/usbd_cdc_if.s
+
+# target to generate assembly for a file
+USB_DEVICE/App/usbd_cdc_if.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_cdc_if.c.s
+.PHONY : USB_DEVICE/App/usbd_cdc_if.c.s
+
+USB_DEVICE/App/usbd_desc.obj: USB_DEVICE/App/usbd_desc.c.obj
+.PHONY : USB_DEVICE/App/usbd_desc.obj
+
+# target to build an object file
+USB_DEVICE/App/usbd_desc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.obj
+.PHONY : USB_DEVICE/App/usbd_desc.c.obj
+
+USB_DEVICE/App/usbd_desc.i: USB_DEVICE/App/usbd_desc.c.i
+.PHONY : USB_DEVICE/App/usbd_desc.i
+
+# target to preprocess a source file
+USB_DEVICE/App/usbd_desc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.i
+.PHONY : USB_DEVICE/App/usbd_desc.c.i
+
+USB_DEVICE/App/usbd_desc.s: USB_DEVICE/App/usbd_desc.c.s
+.PHONY : USB_DEVICE/App/usbd_desc.s
+
+# target to generate assembly for a file
+USB_DEVICE/App/usbd_desc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/App/usbd_desc.c.s
+.PHONY : USB_DEVICE/App/usbd_desc.c.s
+
+USB_DEVICE/Target/usbd_conf.obj: USB_DEVICE/Target/usbd_conf.c.obj
+.PHONY : USB_DEVICE/Target/usbd_conf.obj
+
+# target to build an object file
+USB_DEVICE/Target/usbd_conf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.obj
+.PHONY : USB_DEVICE/Target/usbd_conf.c.obj
+
+USB_DEVICE/Target/usbd_conf.i: USB_DEVICE/Target/usbd_conf.c.i
+.PHONY : USB_DEVICE/Target/usbd_conf.i
+
+# target to preprocess a source file
+USB_DEVICE/Target/usbd_conf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.i
+.PHONY : USB_DEVICE/Target/usbd_conf.c.i
+
+USB_DEVICE/Target/usbd_conf.s: USB_DEVICE/Target/usbd_conf.c.s
+.PHONY : USB_DEVICE/Target/usbd_conf.s
+
+# target to generate assembly for a file
+USB_DEVICE/Target/usbd_conf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LED_Blink.dir/build.make CMakeFiles/LED_Blink.dir/USB_DEVICE/Target/usbd_conf.c.s
+.PHONY : USB_DEVICE/Target/usbd_conf.c.s
+
 startup_stm32f103xb.obj: startup_stm32f103xb.s.obj
 .PHONY : startup_stm32f103xb.obj
 
@@ -280,9 +605,31 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LED_Blink"
 	@echo "... STM32_Drivers"
+	@echo "... USB_Device_Library"
+	@echo "... Core/Src/chinese_font_16x16.obj"
+	@echo "... Core/Src/chinese_font_16x16.i"
+	@echo "... Core/Src/chinese_font_16x16.s"
+	@echo "... Core/Src/gpio.obj"
+	@echo "... Core/Src/gpio.i"
+	@echo "... Core/Src/gpio.s"
+	@echo "... Core/Src/i2c.obj"
+	@echo "... Core/Src/i2c.i"
+	@echo "... Core/Src/i2c.s"
 	@echo "... Core/Src/main.obj"
 	@echo "... Core/Src/main.i"
 	@echo "... Core/Src/main.s"
+	@echo "... Core/Src/rgb_breathing.obj"
+	@echo "... Core/Src/rgb_breathing.i"
+	@echo "... Core/Src/rgb_breathing.s"
+	@echo "... Core/Src/ssd1306.obj"
+	@echo "... Core/Src/ssd1306.i"
+	@echo "... Core/Src/ssd1306.s"
+	@echo "... Core/Src/ssd1306_fonts.obj"
+	@echo "... Core/Src/ssd1306_fonts.i"
+	@echo "... Core/Src/ssd1306_fonts.s"
+	@echo "... Core/Src/ssd1306_fonts_vertical.obj"
+	@echo "... Core/Src/ssd1306_fonts_vertical.i"
+	@echo "... Core/Src/ssd1306_fonts_vertical.s"
 	@echo "... Core/Src/stm32f1xx_hal_msp.obj"
 	@echo "... Core/Src/stm32f1xx_hal_msp.i"
 	@echo "... Core/Src/stm32f1xx_hal_msp.s"
@@ -295,6 +642,24 @@ help:
 	@echo "... Core/Src/sysmem.obj"
 	@echo "... Core/Src/sysmem.i"
 	@echo "... Core/Src/sysmem.s"
+	@echo "... Core/Src/tim.obj"
+	@echo "... Core/Src/tim.i"
+	@echo "... Core/Src/tim.s"
+	@echo "... Core/Src/timer_control.obj"
+	@echo "... Core/Src/timer_control.i"
+	@echo "... Core/Src/timer_control.s"
+	@echo "... USB_DEVICE/App/usb_device.obj"
+	@echo "... USB_DEVICE/App/usb_device.i"
+	@echo "... USB_DEVICE/App/usb_device.s"
+	@echo "... USB_DEVICE/App/usbd_cdc_if.obj"
+	@echo "... USB_DEVICE/App/usbd_cdc_if.i"
+	@echo "... USB_DEVICE/App/usbd_cdc_if.s"
+	@echo "... USB_DEVICE/App/usbd_desc.obj"
+	@echo "... USB_DEVICE/App/usbd_desc.i"
+	@echo "... USB_DEVICE/App/usbd_desc.s"
+	@echo "... USB_DEVICE/Target/usbd_conf.obj"
+	@echo "... USB_DEVICE/Target/usbd_conf.i"
+	@echo "... USB_DEVICE/Target/usbd_conf.s"
 	@echo "... startup_stm32f103xb.obj"
 .PHONY : help
 

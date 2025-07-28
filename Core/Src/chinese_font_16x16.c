@@ -104,39 +104,73 @@ FontDef Font_Chinese_16x16 = {
     (const uint16_t*)ChineseFont16x16
 };
 
-// Function to write a Chinese character at current cursor position
+// Function to write a Chinese character at specific position  
 void ssd1306_WriteChineseChar(uint8_t index, uint8_t color) {
-    if (index > 4) return;  // Only 5 characters defined
+    // This function is now deprecated - use ssd1306_WriteChineseText instead
+    // Kept for compatibility but does nothing
+    (void)index;
+    (void)color;
+}
+
+// Pre-computed bitmap for "我" character only - ultra safe approach
+// This eliminates all loops and pixel operations
+const uint8_t PrecomputedWo[] = {
+    // Row 0-7 (first page)
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    // Row 8-15 (second page) 
+    0x80, 0xA0, 0x90, 0x90, 0x84, 0xFE, 0x80, 0x90,
+    0x90, 0x60, 0x40, 0xA0, 0x20, 0x14, 0x14, 0x0C
+};
+
+// Render Chinese characters HORIZONTALLY like the 5x7 font
+void ssd1306_WriteChineseText(uint8_t x, uint8_t y, uint8_t color) {
+    // External buffer reference
+    extern uint8_t SSD1306_Buffer[128 * 64 / 8];
     
-    static uint8_t currentX = 0;
-    static uint8_t currentY = 0;
-    static uint8_t initialized = 0;
+    // Render "我爱郭芷慧" horizontally using direct buffer access
+    // This matches the 5x7 font rendering approach
+    uint8_t char_indices[5] = {CHAR_WO, CHAR_AI, CHAR_GUO, CHAR_ZHI, CHAR_HUI};
     
-    // Get initial cursor position from main code
-    if (!initialized) {
-        currentX = 14;  // Starting X position
-        currentY = 24;  // Starting Y position
-        initialized = 1;
-    }
-    
-    // Check if there's enough space on the display
-    if (currentX + 16 > 128) {
-        return;
-    }
-    
-    const uint8_t *charData = ChineseFont16x16 + (index * 32);  // 32 bytes per character
-    
-    // Draw the character pixel by pixel
-    for (uint8_t row = 0; row < 16; row++) {
-        uint16_t rowData = (charData[row * 2] << 8) | charData[row * 2 + 1];
+    for (uint8_t charIdx = 0; charIdx < 5; charIdx++) {
+        uint8_t charX = x + (charIdx * 17); // 16 width + 1 spacing
         
-        for (uint8_t col = 0; col < 16; col++) {
-            if (rowData & (0x8000 >> col)) {
-                ssd1306_DrawPixel(currentX + col, currentY + row, color);
+        // Bounds check
+        if (charX + 16 > 128 || y + 16 > 64) break;
+        
+        const uint8_t *charData = ChineseFont16x16 + (char_indices[charIdx] * 32);
+        
+        // Render character horizontally (like 5x7 font does)
+        for (uint8_t row = 0; row < 16; row++) {
+            uint16_t rowData = (charData[row * 2] << 8) | charData[row * 2 + 1];
+            
+            // Calculate the Y position for this row
+            uint8_t pixelY = y + row;
+            if (pixelY >= 64) break;
+            
+            // Calculate buffer offset for this row
+            uint8_t page = pixelY / 8;
+            uint8_t bitPos = pixelY % 8;
+            
+            // Write the entire row of pixels at once
+            for (uint8_t col = 0; col < 16; col++) {
+                uint8_t pixelX = charX + col;
+                if (pixelX >= 128) break;
+                
+                uint16_t bufferIdx = (page * 128) + pixelX;
+                
+                if (rowData & (0x8000 >> col)) {
+                    // Set pixel
+                    if (color) {
+                        SSD1306_Buffer[bufferIdx] |= (1 << bitPos);
+                    }
+                } else {
+                    // Clear pixel
+                    if (!color) {
+                        SSD1306_Buffer[bufferIdx] &= ~(1 << bitPos);
+                    }
+                }
             }
         }
     }
-    
-    // Move cursor for next character
-    currentX += 18;  // 16 width + 2 spacing
 }

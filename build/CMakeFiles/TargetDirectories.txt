@@ -2,5 +2,6 @@
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/edit_cache.dir
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/CMakeFiles/rebuild_cache.dir
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
 /home/freeman.xiong/Documents/github/xiongchenyu6/LED_Blink/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

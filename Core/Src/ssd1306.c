@@ -1,8 +1,8 @@
 #include "ssd1306.h" // <<< Ensure this line is present
 #include "stm32f1xx_hal_i2c.h"
 
-// Screen buffer
-static uint8_t SSD1306_Buffer[SSD1306_WIDTH * SSD1306_HEIGHT / 8];
+// Screen buffer - made non-static so chinese_font_16x16.c can access it
+uint8_t SSD1306_Buffer[SSD1306_WIDTH * SSD1306_HEIGHT / 8];
 
 // Screen object
 static struct
@@ -132,73 +132,92 @@ void ssd1306_DrawPixel(uint8_t x, uint8_t y, uint8_t color)
     }
 }
 
-// Write character
+// Write character - ALL fonts render horizontally with direct buffer access
 char ssd1306_WriteChar(char ch, FontDef Font, uint8_t color)
 {
-    uint32_t i, b, j;
+    uint32_t i, j;
+    uint16_t b;
 
-    // Check if it's the simple 5x7 font (stored as bytes)
+    // Check remaining space for horizontal rendering
+    if (SSD1306_WIDTH <= (SSD1306.CurrentX + Font.FontWidth) ||
+        SSD1306_HEIGHT <= (SSD1306.CurrentY + Font.FontHeight))
+    {
+        return 0; // Not enough space
+    }
+
+    // Special handling for 5x7 font (stored differently)
     if (Font.FontWidth == 5 && Font.FontHeight == 7) {
-        // Check remaining space
-        if (SSD1306_WIDTH <= (SSD1306.CurrentX + Font.FontWidth) ||
-            SSD1306_HEIGHT <= (SSD1306.CurrentY + Font.FontHeight))
-        {
-            return 0; // Not enough space
-        }
-        
-        // Direct byte access for 5x7 font
         const uint8_t *charData = (const uint8_t*)Font.data + (ch - 32) * 7;
         
+        // Direct buffer manipulation for 5x7 font
         for (i = 0; i < Font.FontWidth; i++)
         {
             uint8_t column = charData[i];
             for (j = 0; j < Font.FontHeight; j++)
             {
-                if (column & (1 << j))
-                {
-                    ssd1306_DrawPixel(SSD1306.CurrentX + i, SSD1306.CurrentY + j, color);
-                }
-                else
-                {
-                    ssd1306_DrawPixel(SSD1306.CurrentX + i, SSD1306.CurrentY + j, !color);
+                uint8_t x = SSD1306.CurrentX + i;
+                uint8_t y = SSD1306.CurrentY + j;
+                
+                if (x < SSD1306_WIDTH && y < SSD1306_HEIGHT) {
+                    uint16_t bufferIdx = x + (y / 8) * SSD1306_WIDTH;
+                    uint8_t bitPos = y % 8;
+                    
+                    if (column & (1 << j)) {
+                        if (color) {
+                            SSD1306_Buffer[bufferIdx] |= (1 << bitPos);
+                        } else {
+                            SSD1306_Buffer[bufferIdx] &= ~(1 << bitPos);
+                        }
+                    } else {
+                        if (!color) {
+                            SSD1306_Buffer[bufferIdx] &= ~(1 << bitPos);
+                        }
+                    }
                 }
             }
         }
+    }
+    else {
+        // Font_7x10 is stored column-wise (for vertical rendering)
+        // We need to transpose it for horizontal rendering
+        // Each value in the font data represents a COLUMN, not a row
         
-        // Update cursor position - move right for next character
-        SSD1306.CurrentX += Font.FontWidth + 1;
-        return ch;
-    }
-    
-    // Original code for other fonts (vertical rendering)
-    // Check remaining space on current line
-    if (SSD1306_WIDTH <= (SSD1306.CurrentX + Font.FontHeight) ||
-        SSD1306_HEIGHT <= (SSD1306.CurrentY + Font.FontWidth))
-    {
-        return 0; // Not enough space
-    }
-
-    // Rotate 90 degrees counterclockwise for vertical text
-    for (i = 0; i < Font.FontHeight; i++)
-    {
-        b = Font.data[(ch - 32) * Font.FontHeight + i];
-        for (j = 0; j < Font.FontWidth; j++)
+        for (j = 0; j < Font.FontWidth; j++)  // Iterate through columns
         {
-            if ((b << j) & 0x8000)
+            // Get the column data - Font_7x10 stores 10 values per character
+            // But they represent columns, not rows!
+            uint16_t columnData = Font.data[(ch - 32) * Font.FontHeight + j];
+            
+            for (i = 0; i < Font.FontHeight; i++)  // Iterate through rows
             {
-                // Rotate: x becomes y, y becomes width-x
-                ssd1306_DrawPixel(SSD1306.CurrentX + i, SSD1306.CurrentY + (Font.FontWidth - 1 - j), color);
-            }
-            else
-            {
-                ssd1306_DrawPixel(SSD1306.CurrentX + i, SSD1306.CurrentY + (Font.FontWidth - 1 - j), !color);
+                uint8_t x = SSD1306.CurrentX + j;
+                uint8_t y = SSD1306.CurrentY + i;
+                
+                if (x < SSD1306_WIDTH && y < SSD1306_HEIGHT) {
+                    uint16_t bufferIdx = x + (y / 8) * SSD1306_WIDTH;
+                    uint8_t bitPos = y % 8;
+                    
+                    // Check if bit is set in this column
+                    // Bits are stored from bottom to top in the column data
+                    if ((columnData >> i) & 0x0001) {
+                        if (color) {
+                            SSD1306_Buffer[bufferIdx] |= (1 << bitPos);
+                        } else {
+                            SSD1306_Buffer[bufferIdx] &= ~(1 << bitPos);
+                        }
+                    } else {
+                        if (!color) {
+                            SSD1306_Buffer[bufferIdx] &= ~(1 << bitPos);
+                        }
+                    }
+                }
             }
         }
     }
 
-    // Update cursor position for vertical text
-    SSD1306.CurrentY += Font.FontWidth + 1; // Move down for next character
-    return ch; // OK
+    // Update cursor position - move right for next character (horizontal)
+    SSD1306.CurrentX += Font.FontWidth + 1;
+    return ch;
 }
 
 // Write string

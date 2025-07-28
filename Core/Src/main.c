@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "tim.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -31,6 +32,8 @@
 #include "ssd1306_fonts.h"
 #include "ssd1306_fonts_vertical.h"
 #include "chinese_font_16x16.h"
+#include "rgb_breathing.h"
+#include "timer_control.h"
 
 /* USER CODE END Includes */
 
@@ -70,9 +73,9 @@ void SystemClock_Config(void);
 /* USER CODE END 0 */
 
 /**
- * @brief  The application entry point.
- * @retval int
- */
+  * @brief  The application entry point.
+  * @retval int
+  */
 int main(void)
 {
 
@@ -97,24 +100,58 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
   MX_I2C1_Init();
-  // Skip USB for now - MX_USB_DEVICE_Init();
+  MX_USB_DEVICE_Init();
+  MX_TIM2_Init();  // Initialize TIM2 first
+  MX_TIM3_Init();
+  MX_GPIO_Init();  // GPIO last to avoid conflicts
   /* USER CODE BEGIN 2 */
   
-  // Initialize OLED display immediately
+  // Initialize RGB LED with PWM
+  RGB_Init();
+  
+  // Test PWM RGB with direct timer control
+  HAL_Delay(500);
+  
+  // Test Red (PA0 - TIM2_CH1)
+  RGB_SetColor(800, 0, 0);  // Red at 80%
+  // Also blink blue LED during red test
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // LED ON during red
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED OFF
+  
+  // Test Green (PA1 - TIM2_CH2)
+  RGB_SetColor(0, 800, 0);  // Green at 80%
+  HAL_Delay(1000);
+  
+  // Test Blue (PA2 - TIM2_CH3)
+  RGB_SetColor(0, 0, 800);  // Blue at 80%
+  HAL_Delay(1000);
+  
+  // Turn off
+  RGB_SetColor(0, 0, 0);
+  
+  // Blink blue LED to indicate test complete
+  for(int i = 0; i < 3; i++) {
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // LED ON
+    HAL_Delay(200);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED OFF
+    HAL_Delay(200);
+  }
+  
+  // Initialize breathing effect
+  RGB_Breathing_t breathing_effect;
+  RGB_BreathingInit(&breathing_effect);
+  
+  // Initialize timer control
+  TimerControl_t timer_control;
+  Timer_Init(&timer_control);
+  
+  // Initialize OLED display and show Chinese text initially
   if (ssd1306_Init() == 1) {
-    // Clear screen
+    // Clear screen and show Chinese text properly
     ssd1306_Fill(0);
-    
-    // Display Chinese text "我爱郭芷慧"
-    ssd1306_SetCursor(14, 24);  // Center the text (5 chars * 18px = 90px, (128-90)/2 = 19)
-    ssd1306_WriteChineseChar(CHAR_WO, 1);   // 我
-    ssd1306_WriteChineseChar(CHAR_AI, 1);   // 爱
-    ssd1306_WriteChineseChar(CHAR_GUO, 1);  // 郭
-    ssd1306_WriteChineseChar(CHAR_ZHI, 1);  // 芷
-    ssd1306_WriteChineseChar(CHAR_HUI, 1);  // 慧
-    
+    ssd1306_WriteChineseText(14, 24, 1);  // Properly positioned Chinese text
     ssd1306_UpdateScreen();
   }
   
@@ -175,20 +212,103 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  /* USER CODE END WHILE */
+    /* USER CODE END WHILE */
 
-  /* USER CODE BEGIN 3 */
-    // Simple heartbeat - toggle LED every second
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    HAL_Delay(1000);
+    /* USER CODE BEGIN 3 */
+    // ULTRA simplified approach - minimal operations to isolate corruption
+    static uint32_t last_display_update = 0;
+    static uint8_t test_mode = 0; // 0 = Chinese, 1 = Timer, 2 = Test pattern
+    uint32_t current_time = HAL_GetTick();
+    
+    // Check for button press to cycle through modes
+    if (Timer_ReadButton()) {
+        test_mode = (test_mode + 1) % 3;
+        HAL_Delay(200); // Debounce
+    }
+    
+    // Update display every 5 seconds for better user experience
+    if (current_time - last_display_update >= 5000) {
+        last_display_update = current_time;
+        
+        // Complete interrupt protection during I2C operations
+        __disable_irq();
+        
+        // Clear screen
+        ssd1306_Fill(0);
+        
+        switch (test_mode) {
+            case 0:
+                // Beautiful welcome screen
+                ssd1306_SetCursor(25, 5);
+                ssd1306_WriteString("Welcome", Font_5x7, 1);  // Use Font_5x7 which works
+                
+                // Center the Chinese text horizontally
+                ssd1306_WriteChineseText(14, 24, 1);  // "我爱郭芷慧"
+                
+                // Add decoration using Font_5x7
+                ssd1306_SetCursor(50, 45);
+                ssd1306_WriteString("* * *", Font_5x7, 1);
+                ssd1306_SetCursor(45, 54);
+                ssd1306_WriteString("Forever", Font_5x7, 1);
+                break;
+                
+            case 1:
+                // Timer display using Font_5x7
+                ssd1306_SetCursor(45, 5);
+                ssd1306_WriteString("TIMER", Font_5x7, 1);
+                
+                // Use dashes as separator
+                ssd1306_SetCursor(15, 20);
+                ssd1306_WriteString("---------------", Font_5x7, 1);
+                
+                // Timer value
+                ssd1306_SetCursor(45, 30);
+                ssd1306_WriteString("05:30", Font_5x7, 1);
+                
+                // Status indicator
+                ssd1306_SetCursor(45, 45);
+                ssd1306_WriteString("READY", Font_5x7, 1);
+                break;
+                
+            case 2:
+                // Control panel display
+                ssd1306_SetCursor(25, 2);
+                ssd1306_WriteString("Control Panel", Font_5x7, 1);
+                
+                ssd1306_SetCursor(5, 15);
+                ssd1306_WriteString("RGB LED: Active", Font_5x7, 1);
+                
+                ssd1306_SetCursor(5, 27);
+                ssd1306_WriteString("Effect: Rainbow", Font_5x7, 1);
+                
+                ssd1306_SetCursor(5, 39);
+                ssd1306_WriteString("Timer: 05:30", Font_5x7, 1);
+                
+                ssd1306_SetCursor(15, 51);
+                ssd1306_WriteString("[Press Button]", Font_5x7, 1);
+                break;
+        }
+        
+        ssd1306_UpdateScreen();
+        __enable_irq();
+        
+        // Longer delay after I2C operations
+        HAL_Delay(500);
+    }
+    
+    // Update RGB breathing effect
+    RGB_BreathingUpdate(&breathing_effect);
+    
+    // System delay
+    HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
 
 /**
- * @brief System Clock Configuration
- * @retval None
- */
+  * @brief System Clock Configuration
+  * @retval None
+  */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -196,8 +316,8 @@ void SystemClock_Config(void)
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
-   * in the RCC_OscInitTypeDef structure.
-   */
+  * in the RCC_OscInitTypeDef structure.
+  */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
@@ -211,8 +331,9 @@ void SystemClock_Config(void)
   }
 
   /** Initializes the CPU, AHB and APB buses clocks
-   */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
@@ -235,9 +356,9 @@ void SystemClock_Config(void)
 /* USER CODE END 4 */
 
 /**
- * @brief  This function is executed in case of error occurrence.
- * @retval None
- */
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
@@ -249,14 +370,14 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef USE_FULL_ASSERT
+#ifdef  USE_FULL_ASSERT
 /**
- * @brief  Reports the name of the source file and the source line number
- *         where the assert_param error has occurred.
- * @param  file: pointer to the source file name
- * @param  line: assert_param error line source number
- * @retval None
- */
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
