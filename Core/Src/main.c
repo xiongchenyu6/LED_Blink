@@ -147,12 +147,35 @@ int main(void)
   TimerControl_t timer_control;
   Timer_Init(&timer_control);
   
-  // Initialize OLED display and show Chinese text initially
+  // Initialize OLED display and show startup test
   if (ssd1306_Init() == 1) {
-    // Clear screen and show Chinese text properly
+    // Clear screen and show test pattern
+    ssd1306_Fill(0);
+    ssd1306_SetCursor(25, 20);
+    ssd1306_WriteString("STARTUP", Font_5x7, 1);
+    ssd1306_SetCursor(30, 30);
+    ssd1306_WriteString("TEST", Font_5x7, 1);
+    ssd1306_UpdateScreen();
+    
+    // Blink LED to show OLED init success
+    for(int i = 0; i < 5; i++) {
+      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET); // LED ON
+      HAL_Delay(100);
+      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED OFF
+      HAL_Delay(100);
+    }
+    
+    // Now show Chinese text
     ssd1306_Fill(0);
     ssd1306_WriteChineseText(14, 24, 1);  // Properly positioned Chinese text
     ssd1306_UpdateScreen();
+    HAL_Delay(1000);  // Show for 1 second before main loop
+  } else {
+    // OLED init failed - rapid LED flash
+    for(int i = 0; i < 20; i++) {
+      HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+      HAL_Delay(50);
+    }
   }
   
   /*
@@ -215,89 +238,49 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    // ULTRA simplified approach - minimal operations to isolate corruption
+    // Clean countdown timer implementation
     static uint32_t last_display_update = 0;
-    static uint8_t test_mode = 0; // 0 = Chinese, 1 = Timer, 2 = Test pattern
     uint32_t current_time = HAL_GetTick();
     
-    // Check for button press to cycle through modes
-    if (Timer_ReadButton()) {
-        test_mode = (test_mode + 1) % 3;
-        HAL_Delay(200); // Debounce
+    // Initialize timer control
+    static bool timer_initialized = false;
+    if (!timer_initialized) {
+        timer_initialized = true;
+        Timer_Init(&timer_control);
+        last_display_update = 0;  // Force immediate display
     }
     
-    // Update display every 5 seconds for better user experience
-    if (current_time - last_display_update >= 5000) {
-        last_display_update = current_time;
+    // Handle encoder and button input
+    Timer_HandleEncoder(&timer_control);
+    Timer_HandleButton(&timer_control);
+    Timer_Update(&timer_control);
+    
+    // Update display
+    Timer_DisplayOnOLED(&timer_control);
+    
+    // Handle timer finished alarm
+    if (timer_control.state == TIMER_FINISHED) {
+        // Flash RGB LED as alarm
+        static uint32_t last_alarm_flash = 0;
+        static bool alarm_led_state = false;
         
-        // Complete interrupt protection during I2C operations
-        __disable_irq();
-        
-        // Clear screen
-        ssd1306_Fill(0);
-        
-        switch (test_mode) {
-            case 0:
-                // Beautiful welcome screen
-                ssd1306_SetCursor(25, 5);
-                ssd1306_WriteString("Welcome", Font_5x7, 1);  // Use Font_5x7 which works
-                
-                // Center the Chinese text horizontally
-                ssd1306_WriteChineseText(14, 24, 1);  // "我爱郭芷慧"
-                
-                // Add decoration using Font_5x7
-                ssd1306_SetCursor(50, 45);
-                ssd1306_WriteString("* * *", Font_5x7, 1);
-                ssd1306_SetCursor(45, 54);
-                ssd1306_WriteString("Forever", Font_5x7, 1);
-                break;
-                
-            case 1:
-                // Timer display using Font_5x7
-                ssd1306_SetCursor(45, 5);
-                ssd1306_WriteString("TIMER", Font_5x7, 1);
-                
-                // Use dashes as separator
-                ssd1306_SetCursor(15, 20);
-                ssd1306_WriteString("---------------", Font_5x7, 1);
-                
-                // Timer value
-                ssd1306_SetCursor(45, 30);
-                ssd1306_WriteString("05:30", Font_5x7, 1);
-                
-                // Status indicator
-                ssd1306_SetCursor(45, 45);
-                ssd1306_WriteString("READY", Font_5x7, 1);
-                break;
-                
-            case 2:
-                // Control panel display
-                ssd1306_SetCursor(25, 2);
-                ssd1306_WriteString("Control Panel", Font_5x7, 1);
-                
-                ssd1306_SetCursor(5, 15);
-                ssd1306_WriteString("RGB LED: Active", Font_5x7, 1);
-                
-                ssd1306_SetCursor(5, 27);
-                ssd1306_WriteString("Effect: Rainbow", Font_5x7, 1);
-                
-                ssd1306_SetCursor(5, 39);
-                ssd1306_WriteString("Timer: 05:30", Font_5x7, 1);
-                
-                ssd1306_SetCursor(15, 51);
-                ssd1306_WriteString("[Press Button]", Font_5x7, 1);
-                break;
+        if (current_time - last_alarm_flash >= 200) {  // Flash every 200ms
+            last_alarm_flash = current_time;
+            alarm_led_state = !alarm_led_state;
+            
+            if (alarm_led_state) {
+                // Flash red for alarm
+                RGB_SetColor(1000, 0, 0);  // Bright red
+                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);  // Blue LED ON
+            } else {
+                RGB_SetColor(0, 0, 0);     // Off
+                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);    // Blue LED OFF
+            }
         }
-        
-        ssd1306_UpdateScreen();
-        __enable_irq();
-        
-        // Longer delay after I2C operations
-        HAL_Delay(500);
+    } else {
+        // Normal RGB breathing effect
+        RGB_BreathingUpdate(&breathing_effect);
     }
-    
-    // Update RGB breathing effect
-    RGB_BreathingUpdate(&breathing_effect);
     
     // System delay
     HAL_Delay(10);

@@ -28,6 +28,7 @@ void Timer_Update(TimerControl_t *timer);
 void Timer_DisplayOnOLED(TimerControl_t *timer);
 uint32_t Timer_ReadEncoder(void);
 bool Timer_ReadButton(void);
+int32_t Timer_ReadEncoderChange(void);
 
 // Timer settings
 #define TIMER_MIN_VALUE     1    // Minimum 1 second

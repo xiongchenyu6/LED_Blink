@@ -37,8 +37,8 @@ int32_t Timer_ReadEncoderChange(void)
     uint32_t current_time = HAL_GetTick();
     
     // Read current GPIO states (inverted because of pullup)
-    uint8_t a = !HAL_GPIO_ReadPin(ENCODER_A_GPIO_Port, ENCODER_A_Pin);
-    uint8_t b = !HAL_GPIO_ReadPin(ENCODER_B_GPIO_Port, ENCODER_B_Pin);
+    uint8_t a = !HAL_GPIO_ReadPin(ENCODER_A_GPIO_Port, ENCODER_A_Pin);  // PB0
+    uint8_t b = !HAL_GPIO_ReadPin(ENCODER_B_GPIO_Port, ENCODER_B_Pin);  // PB1
     
     // Simple edge detection with debouncing
     if (current_time - last_change_time < 20) {
@@ -51,11 +51,11 @@ int32_t Timer_ReadEncoderChange(void)
         last_a = a;
         
         if (a) { // Rising edge on A
-            // Check B state to determine direction
+            // Check B state to determine direction (reversed logic)
             if (b) {
-                return 1;  // Clockwise
+                return -1; // Counter-clockwise (was clockwise)
             } else {
-                return -1; // Counter-clockwise
+                return 1;  // Clockwise (was counter-clockwise)
             }
         }
     }
@@ -73,10 +73,10 @@ int32_t Timer_ReadEncoderChange(void)
 bool Timer_ReadButton(void)
 {
     uint32_t current_time = HAL_GetTick();
-    bool current_state = !HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin); // Active low
+    bool current_state = !HAL_GPIO_ReadPin(BUTTON_GPIO_Port, BUTTON_Pin); // PB10 - Active low
     
-    // Better debounce timing - longer delay
-    if (current_time - button_debounce_time < 200) {
+    // Shorter debounce for better responsiveness
+    if (current_time - button_debounce_time < 50) {
         return false;
     }
     
@@ -88,7 +88,7 @@ bool Timer_ReadButton(void)
     }
     
     // Update state after debounce period
-    if (current_time - button_debounce_time > 200) {
+    if (current_time - button_debounce_time >= 50) {
         last_button_state = current_state;
     }
     
@@ -194,100 +194,84 @@ void Timer_Update(TimerControl_t *timer)
  */
 void Timer_DisplayOnOLED(TimerControl_t *timer)
 {
-    static bool show_timer_interface = false;
-    static uint32_t last_encoder_interaction = 0;
-    static uint32_t last_button_interaction = 0;
-    static uint32_t last_display_time = 0;
-    static uint8_t last_display_state = 255;
-    
-    // Check if we should show timer interface
+    static uint32_t last_update = 0;
     uint32_t current_time = HAL_GetTick();
-    bool timer_active = (timer->state == TIMER_RUNNING || timer->state == TIMER_FINISHED);
-    bool recent_interaction = (current_time - last_encoder_interaction < 3000) || 
-                             (current_time - last_button_interaction < 3000);
     
-    // Update interaction timestamps
-    if (timer->display_update) {
-        if (timer->state == TIMER_RUNNING || timer->state == TIMER_FINISHED) {
-            last_button_interaction = current_time;
-        }
-        if (timer->state == TIMER_STOPPED) {
-            last_encoder_interaction = current_time;
-        }
+    // Update every 500ms to avoid crashes
+    if (current_time - last_update < 500) {
+        return;
     }
+    last_update = current_time;
     
-    // Decide what to show
-    bool should_show_timer = timer_active || recent_interaction;
+    // Simple display update
+    __disable_irq();
     
-    // Get current display time for comparison
+    ssd1306_Fill(0);  // Clear screen
+    
+    // Show timer value
+    ssd1306_SetCursor(10, 10);
+    ssd1306_WriteString("Timer:", Font_5x7, 1);
+    
+    // Display time in MM:SS:MS format (minutes:seconds:milliseconds)
     uint32_t display_time = (timer->state == TIMER_STOPPED) ? timer->set_time : timer->remaining_time;
+    uint32_t tick_time = HAL_GetTick();
     
-    // Only update if something actually changed
-    bool needs_update = (should_show_timer != show_timer_interface) ||
-                       (display_time != last_display_time) ||
-                       (timer->state != last_display_state) ||
-                       timer->display_update;
+    // Convert to minutes and seconds
+    uint32_t minutes = display_time / 60;
+    uint32_t seconds = display_time % 60;
     
-    if (needs_update) {
-        show_timer_interface = should_show_timer;
-        last_display_time = display_time;
-        last_display_state = timer->state;
-        timer->display_update = false;
-        
-        // Disable all interrupts for stability
-        __disable_irq();
-        
-        // Clear screen completely
-        ssd1306_Fill(0);
-        
-        if (show_timer_interface) {
-            // Simple timer display - just the essentials
-            
-            // Timer title
-            ssd1306_SetCursor(40, 5);
-            ssd1306_WriteString("TIMER", Font_7x10, 1);
-            
-            // Format and display time
-            uint32_t minutes = display_time / 60;
-            uint32_t seconds = display_time % 60;
-            
-            // Use simple string formatting to avoid corruption
-            char min_str[4];
-            char sec_str[4];
-            min_str[0] = '0' + (minutes / 10);
-            min_str[1] = '0' + (minutes % 10);
-            min_str[2] = '\0';
-            sec_str[0] = '0' + (seconds / 10);
-            sec_str[1] = '0' + (seconds % 10);
-            sec_str[2] = '\0';
-            
-            // Display time pieces separately
-            ssd1306_SetCursor(30, 25);
-            ssd1306_WriteString(min_str, Font_11x18, 1);
-            ssd1306_SetCursor(52, 25);
-            ssd1306_WriteString(":", Font_11x18, 1);
-            ssd1306_SetCursor(65, 25);
-            ssd1306_WriteString(sec_str, Font_11x18, 1);
-            
-            // Simple status
-            ssd1306_SetCursor(25, 50);
-            if (timer->state == TIMER_STOPPED) {
-                ssd1306_WriteString("Turn Encoder", Font_7x10, 1);
-            } else if (timer->state == TIMER_RUNNING) {
-                ssd1306_WriteString("RUNNING", Font_7x10, 1);
-            } else {
-                ssd1306_WriteString("TIME UP!", Font_7x10, 1);
-            }
-            
-        } else {
-            // Show Chinese text
-            ssd1306_WriteChineseText(14, 24, 1);
-        }
-        
-        // Update screen
-        ssd1306_UpdateScreen();
-        
-        // Re-enable interrupts
-        __enable_irq();
+    // Get milliseconds - only update when timer is running
+    uint32_t milliseconds;
+    if (timer->state == TIMER_RUNNING) {
+        milliseconds = (tick_time / 10) % 100;  // Live milliseconds when running
+    } else {
+        milliseconds = 0;  // Show 00 when stopped or finished
     }
+    
+    // Display MM:SS:MS format using Font_5x7
+    ssd1306_SetCursor(15, 25);
+    char single_char[2];
+    single_char[1] = '\0';
+    
+    // Minutes (2 digits)
+    single_char[0] = '0' + (minutes / 10);
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    single_char[0] = '0' + (minutes % 10);
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    // Colon
+    single_char[0] = ':';
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    // Seconds (2 digits)
+    single_char[0] = '0' + (seconds / 10);
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    single_char[0] = '0' + (seconds % 10);
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    // Colon
+    single_char[0] = ':';
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    // Milliseconds (2 digits, 00-99)
+    single_char[0] = '0' + (milliseconds / 10);
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    single_char[0] = '0' + (milliseconds % 10);
+    ssd1306_WriteString(single_char, Font_5x7, 1);
+    
+    // Show state
+    ssd1306_SetCursor(10, 45);
+    if (timer->state == TIMER_STOPPED) {
+        ssd1306_WriteString("STOP", Font_5x7, 1);
+    } else if (timer->state == TIMER_RUNNING) {
+        ssd1306_WriteString("RUN", Font_5x7, 1);
+    } else {
+        ssd1306_WriteString("DONE", Font_5x7, 1);
+    }
+    
+    ssd1306_UpdateScreen();
+    __enable_irq();
 }
